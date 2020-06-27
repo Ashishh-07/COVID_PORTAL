@@ -22,7 +22,7 @@ $(document).ready(function () {
         deaths.push(obj.deaths);
       });
   
-     
+      // Remove the first element in the states, confirmed, recovered, and deaths as that is the total value
       states.shift();
       confirmed.shift();
       recovered.shift();
