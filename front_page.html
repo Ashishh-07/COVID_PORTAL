@@ -12,149 +12,8 @@
 
     <title>Covid_Project</title>
   </head>
-  <body>
-  <style>
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body{font-family: 'Poppins', sans-serif;
-     background: #fafafa}
-p{font-family: 'Poppins', sans-serif;
-  font-size: 1.1em;
-	font-weight: 300;
-	line-height: 1.7em;
-	color: #999;
-}
-a,
-a:hover,
-a:focus{
-	color: inherit;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-.navbar{
-	padding: 15px 10px;
-	background: #fff;
-	border: none;
-	border-radius: 0;
-	margin-bottom: 40px;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-}
-
-.navbar-btn{
-	box-shadow: none;
-	outline: none!important;
-	border: none;
-}
-
-.line{
-	width: 100%;
-	height: 1px;
-	border-bottom: 1px dashed #ddd;
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-}
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
-}
-#sidebar.active{
-	margin-left: -250px;
-}
-
-#sidebar .sidebar-header{
-	padding: 20px;
-	background: #6d7fcc;
-}
-#sidebar ul.components{
-	padding: 20px 0px;
-	border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p{
-	padding: 10px;
-	font-size: 1.1em;
-	display: block;
-}
-
-#sidebar ul li a{
-	padding: 10px;
-	font-size: 1.1em;
-	display: block;
-}
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
-a[data-toggle="collapse"] {
-    position: relative;
-}
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-a.download{
-	background: #fff;
-	color: #7386D5;
-}
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
-
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
-
-@media(maz-width:768px){
-	#sidebar{margin-left: -250px;}
-	#sidebar.active{
-		margin-left: 0px;
-	}
-	#sidebarCollapse span{
-		display: none;
-	}
-}
-
-
-  </style>
-   
+  <body style="background-color: azure;">
+  <style src="style.css"></style> 
    <div class="wrapper">
    	<nav id="sidebar">
    		<div class="sidebar-header">
@@ -165,10 +24,10 @@ a.article:hover {
    				<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Data</a>
    				<ul class="collapse list-unstyled" id="homeSubmenu">
    					<li>
-   						<a href="#">Day Wise</a>
+   						<a href="statewise.html">State-Wise</a>
    					</li>
    					<li>
-   						<a href="#">Month Wise</a>
+   						<a href="#">City-Wise</a>
    					</li>
    				</ul> 
    			</li>
@@ -228,16 +87,26 @@ a.article:hover {
   	
   	
   	<div class="container-fluid">
-   <h2 style="text-align: center;">COVID INFORMATION PORTAL</h2>
-	<p style="color: black;">Nagpur is the third largest city and the winter capital of the Indian state of Maharashtra.It is the 13th largest city in India by population and according to an Oxford Economics report, Nagpur is projected to be the fifth fastest growing city in the world from 2019 to 2035 with an average growth of 8.41%.It has been proposed as one of the Smart Cities in Maharashtra and is one of the top ten cities in India in Smart City Project execution.
-
-		Nagpur is the seat of the annual winter session of the Maharashtra state assembly. It is a major commercial and political centre of the Vidarbha region of Maharashtra. In addition, the city derives unique importance from being the headquarters for the Hindu nationalist organisation RSS and an important location for the Dalit Buddhist movement. Nagpur is also known for Deekshabhoomi, the largest hollow stupa among all the Buddhist stupas in the world.</p>
-		
-		<p style="color: black;">According to a survey by ABP News-Ipsos, Nagpur was identified as the best city in India topping in livability, greenery, public transport, and health care indices in 2013. The city was adjudged the 20th cleanest city in India and the top mover in the western zone as per Swachh Sarvekshan 2016.It was awarded as the best city for innovation and best practice in Swachh Sarvekshan 2018.It was also declared as open defecation free in January 2018 under Swachh Bharat Mission.It is also one of the safest cities for women in India.
-		city also ranks 31st in Ease of Living index among 111 cities in India. It was ranked the 8th most competitive city in the country by the Institute for Competitiveness for the year 2017. </p> <p style="color: black;">
-		
-		It is famous for Nagpur oranges and is sometimes known as the Orange City for being a major trade center of oranges cultivated in large part of the region.It is also called the Tiger Capital of India or the Tiger Gateway of India as many tiger reserves are located in and around the city and also hosts the regional office of National Tiger Conservation Authority. The city was founded in 1703 by the Gonds King Bakht Buland Shah of Deogarh and later became a part of the Maratha Empire under the royal Bhonsale dynasty. The British East India Company took over Nagpur in the 19th century and made it the capital of the Central Provinces and Berar. After the first re-organisation of states, the city lost its status as the capital. Following the informal Nagpur Pact between political leaders, it was made the second capital of Maharashtra. </p>
-	  <div class="line"></div>
+        <h2 style="text-align: center;">COVID INFORMATION PORTAL</h2>
+	<p style="color: black;">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p><br>
+	<p style="color: black;">Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p><br>
+	<p style="color: black;">The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. </p> <br>
+	
+	<li> 
+		<a style="color: black;font-weight: bold;" href ="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Protect yourself: advice for the public</a>
+	</li>
+	<li>
+		<a style="color: black;font-weight: bold" href ="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses">Myth busters</a>
+	</li>	
+	<li>
+		<a style="color: black;font-weight: bold" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses">Questions and answers</a>
+	</li>
+	<li>
+		<a style="color: black;font-weight: bold" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">All information on the COVID-19 outbreak</a>
+	</li>
+	<br>
+	<p style="color: black;">The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+        At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.</p><br>
 	</div>
 </div>
    	
