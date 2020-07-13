@@ -21,7 +21,7 @@ StateWise Analysis.
 ![c1](/Images/st1.JPG)
 
 DateWise Analysis.
-![c2](/Images/d1.JPG)
+![c2](/Images/dt1.JPG)
 
 Test Analysis.
 ![c3](/Images/test.JPG)
