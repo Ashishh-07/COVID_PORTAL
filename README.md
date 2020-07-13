@@ -8,8 +8,10 @@ available here - https://www.chartjs.org/.
 
 ![Co](/Images/image1.JPG)
 
-If not necessary please stay at home, do something that you like :) 
+please stay at home, do something that you like :) 
 
 I'm attaching some screenshots, Hope You Like it, if you want to contribute, you are always welcome! 
 
 ![co](/Images/counts.JPG)
+
+![c1](/Images/st1.JPG)
