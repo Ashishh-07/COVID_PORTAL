@@ -26,3 +26,5 @@ DateWise Analysis.
 Test Analysis.
 ![c3](/Images/test.JPG)
 
+Lastly,
+![c6](/Images/motivation.JPG)
