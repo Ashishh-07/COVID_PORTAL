@@ -6,4 +6,4 @@ You can also find projection of Covid test done in india.
 I'm using ChartJS library to show the data, Big thank you to ChartJS. You can find some sample examples here -https://github.com/chartjs/Chart.js and Documentation of ChartJS is 
 available here - https://www.chartjs.org/.
 
-(/Images/images1.JPG)
+![Covid Portal](/Images/images1.JPG)
