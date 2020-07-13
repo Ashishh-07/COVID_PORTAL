@@ -1,2 +1,2 @@
 # COVID_PORTAL
-![Covid Portal](/Images/Title.jpg)
+![Covid Portal](/Images/Title.JPG)
