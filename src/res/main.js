@@ -43,7 +43,7 @@ $(document).ready(function () {
           {
             label: "Confirmed Cases",
             data: confirmed,
-            backgroundColor: "#bf88f6",
+            backgroundColor: "#aaf3ac",
             minBarLength: 100,
           },
           {
