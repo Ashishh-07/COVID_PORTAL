@@ -43,19 +43,19 @@ $(document).ready(function () {
           {
             label: "Confirmed Cases",
             data: confirmed,
-            backgroundColor: "#f1c40f",
+            backgroundColor: "#bf88f6",
             minBarLength: 100,
           },
           {
             label: "Recovered",
             data: recovered,
-            backgroundColor: "#2ecc71",
+            backgroundColor: "#8bd1ee",
             minBarLength: 100,
           },
           {
             label: "Deceased",
             data: deaths,
-            backgroundColor: "#e74c3c",
+            backgroundColor: "#ff6161",
             minBarLength: 100,
           },
         ],
