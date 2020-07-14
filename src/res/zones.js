@@ -27,7 +27,7 @@ $(document).ready(function () {
             {
               label: "Positive Cases",
               data: positive,
-              backgroundColor: "#bf88f6",
+              backgroundColor: "#aaf3ac",
             },
             {
               label: "Recovered Cases",
