@@ -1,6 +1,9 @@
 $(document).ready(function () {
     // Get JSON data from url
+
     $.getJSON("https://api.covid19india.org/data.json",function (data1){
+
+    
         let testPermil =0;
         let totalsampletest =0;
 
@@ -10,6 +13,8 @@ $(document).ready(function () {
         });
         document.getElementById("testdone").innerHTML = totalsampletest.toLocaleString('en');
         document.getElementById("testmil").innerHTML = testPermil.toLocaleString('en');
+
+
     });
 
     $.getJSON("https://api.covid19india.org/state_test_data.json", function (data) {
@@ -44,7 +49,7 @@ $(document).ready(function () {
       let up_cases =0;
       let uk_cases = 0;
       let wb_cases = 0;
-      let at_p;
+      
       $.each(data.states_tested_data, function (id, obj) {
         if(obj.state == "Andaman and Nicobar Islands"){
             an_cases = obj.totaltested;            
@@ -147,43 +152,154 @@ $(document).ready(function () {
         }
         
       });
+      const mymap = L.map('issMap').setView([0, 0], 6);
+      const attribution =
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+  
+      const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      const tiles = L.tileLayer(tileUrl, { attribution });
+        tiles.addTo(mymap);
+  
+       mymap.setView([19.663280, 75.300293], 5);
+       L.marker([19.663280, 75.300293]).addTo(mymap)
+      .bindPopup('Maharashtra Test Count:' +mh_cases)
+      .openPopup();
+       mymap.setView([11.623377, 92.726486], 5);
+       L.marker([11.623377, 92.726486]).addTo(mymap)
+       .bindPopup('Andaman and Nicobar Islands test count:'+an_cases)
+       .openPopup();
+       mymap.setView([17.004393, 81.783325], 5);
+       L.marker([17.004393, 81.783325]).addTo(mymap)
+      .bindPopup('Andhra Pradesh test count:' +andhra_cases)
+      .openPopup();
+       mymap.setView([28.218, 94.7278], 5);
+       L.marker([28.218, 94.7278]).addTo(mymap)
+      .bindPopup('Arunachal pradesh test count:' +aru_cases)
+      .openPopup();
+      mymap.setView([26.244156, 92.537842], 5);
+      L.marker([26.244156, 92.537842]).addTo(mymap)
+     .bindPopup('Assam test count:' +as_cases)
+     .openPopup();
+     mymap.setView([25.612677, 85.158875], 5);
+     L.marker([ 25.612677, 85.158875]).addTo(mymap)
+    .bindPopup('Bihar test count:' +bh_cases)
+    .openPopup();
+    mymap.setView([30.741482, 76.768066], 5);
+     L.marker([30.741482, 76.768066]).addTo(mymap)
+    .bindPopup('Chandigarh test count:' +bh_cases)
+    .openPopup();
+    mymap.setView([20.397373, 72.832802], 5);
+    L.marker([20.397373, 72.832802]).addTo(mymap)
+    .bindPopup('Dadra and Nagar Haveli and Daman and Diu test count:' +d_cases)
+    .openPopup();
+     mymap.setView([28.65381, 77.22897], 5);
+     L.marker([28.65381, 77.22897]).addTo(mymap)
+    .bindPopup('Delhi test count:' +de_cases)
+    .openPopup();
+     mymap.setView([15.533414, 73.764954], 5);
+     L.marker([15.533414, 73.764954]).addTo(mymap)
+    .bindPopup('Goa test count:' +g_cases)
+    .openPopup();
+    mymap.setView([23.033863,72.585022], 5);
+    L.marker([23.033863, 72.585022]).addTo(mymap)
+   .bindPopup('Gujarat test count:' +gj_cases)
+   .openPopup();
+   mymap.setView([29.065773,76.040497], 5);
+    L.marker([29.065773, 76.040497]).addTo(mymap)
+   .bindPopup('Haryana test count:' +h_cases)
+   .openPopup();
+   mymap.setView([32.084206,77.571167], 5);
+   L.marker([32.084206, 77.571167]).addTo(mymap)
+  .bindPopup('Himachal Pradesh test count:' +hi_cases)
+  .openPopup();
+  mymap.setView([34.083656,74.797371], 5);
+  L.marker([34.083656, 74.797371]).addTo(mymap)
+ .bindPopup('Jammu kashmir test count:' +jk_cases)
+ .openPopup();
+ mymap.setView([23.344315,85.296013], 5);
+  L.marker([23.344315, 85.296013]).addTo(mymap)
+ .bindPopup('Jharkhand test count:' +jh_cases)
+ .openPopup();
+ mymap.setView([15.317277,75.713890], 5);
+ L.marker([ 15.317277, 75.713890]).addTo(mymap)
+.bindPopup('Karnataka test count:' +kn_cases)
+.openPopup();
+mymap.setView([8.524139,76.936638], 5);
+ L.marker([ 8.524139,76.936638]).addTo(mymap)
+.bindPopup('Kerala test count:' +kl_cases)
+.openPopup();
+mymap.setView([34.152588,77.577049], 5);
+ L.marker([34.152588,77.577049]).addTo(mymap)
+.bindPopup('Ladakh test count:' +la_cases)
+.openPopup();
+mymap.setView([22.346266,78.666916], 5);
+ L.marker([22.346266,78.666916]).addTo(mymap)
+.bindPopup('Madhya Pradesh test count:' +mp_cases)
+.openPopup();
+mymap.setView([24.782784,93.885895], 5);
+ L.marker([24.782784,93.885895]).addTo(mymap)
+.bindPopup('Manipur test count:' +mn_cases)
+.openPopup();
+mymap.setView([25.469393,89.951324], 5);
+ L.marker([25.469393,89.951324]).addTo(mymap)
+.bindPopup('Meghalaya test count:' +me_cases)
+.openPopup();
+mymap.setView([24.226460,92.954552], 5);
+ L.marker([24.226460,92.954552]).addTo(mymap)
+.bindPopup('Mizoram test count:' +mz_cases)
+.openPopup();
+mymap.setView([25.906267,93.727592], 5);
+ L.marker([25.906267,93.727592]).addTo(mymap)
+.bindPopup('Nagaland test count:' +ng_cases)
+.openPopup();
+mymap.setView([20.296059, 85.824539], 5);
+ L.marker([20.296059, 85.824539]).addTo(mymap)
+.bindPopup('Odisha test count:' +od_cases)
+.openPopup();
+mymap.setView([11.916064, 79.812325], 5);
+ L.marker([11.916064, 79.812325]).addTo(mymap)
+.bindPopup('Puducherry test count:' +pd_cases)
+.openPopup();
+mymap.setView([30.900965 , 75.857277], 5);
+ L.marker([30.900965 , 75.857277]).addTo(mymap)
+.bindPopup('Punjab test count:' +pb_cases)
+.openPopup();
+mymap.setView([27.391277, 73.432617], 5);
+ L.marker([27.391277 , 73.432617]).addTo(mymap)
+.bindPopup('Rajasthan test count:' +rj_cases)
+.openPopup();
+mymap.setView([27.338936,  88.606506], 5);
+ L.marker([27.338936, 88.606506]).addTo(mymap)
+.bindPopup('Sikkim test count:' +sk_cases)
+.openPopup();
+mymap.setView([11.059821,  88.606506], 5);
+ L.marker([11.059821, 78.387451]).addTo(mymap)
+.bindPopup('Tamilnadu test count:' +tn_cases)
+.openPopup();
+mymap.setView([23.829321,  91.277847], 5);
+ L.marker([23.829321, 91.277847]).addTo(mymap)
+.bindPopup('Tripura test count:' +tr_cases)
+.openPopup();
+mymap.setView([28.207609,  79.826660], 5);
+ L.marker([28.207609, 79.826660]).addTo(mymap)
+.bindPopup('Uttar Pradesh test count:' +up_cases)
+.openPopup();
+mymap.setView([29.380304,  79.463570], 5);
+ L.marker([29.380304,79.463570]).addTo(mymap)
+.bindPopup('Uttarakhand test count:' +uk_cases)
+.openPopup();
+mymap.setView([22.390793,  88.227760], 5);
+ L.marker([22.390793,88.227760]).addTo(mymap)
+.bindPopup('West Bengal test count:' +wb_cases)
+.openPopup();
+ 
+ 
     
-      document.getElementById('an_case').innerHTML = an_cases.toLocaleString('en');
-      document.getElementById('andhra_cases').innerHTML = andhra_cases.toLocaleString('en');
-      document.getElementById('aru_cases').innerHTML = aru_cases.toLocaleString('en');
-      document.getElementById('as_cases').innerHTML =as_cases.toLocaleString('en');
-      document.getElementById('bh_cases').innerHTML = bh_cases.toLocaleString('en');
-      document.getElementById('ch_cases').innerHTML = ch_cases.toLocaleString('en');
-      document.getElementById('d_cases').innerHTML = d_cases.toLocaleString('en');
-      document.getElementById('de_cases').innerHTML = de_cases.toLocaleString('en');
-      document.getElementById('g_cases').innerHTML = g_cases.toLocaleString('en');
-      document.getElementById('gj_cases').innerHTML = gj_cases.toLocaleString('en');
-      document.getElementById('h_cases').innerHTML = h_cases.toLocaleString('en');
-      document.getElementById('hi_cases').innerHTML = hi_cases.toLocaleString('en');
-      document.getElementById('jk_cases').innerHTML = jk_cases.toLocaleString('en');
-      document.getElementById('jh_cases').innerHTML = jh_cases.toLocaleString('en');
-      document.getElementById('kn_cases').innerHTML = kn_cases.toLocaleString('en');
-      document.getElementById('kl_cases').innerHTML = kl_cases.toLocaleString('en');
-      document.getElementById('la_cases').innerHTML = la_cases.toLocaleString('en');
-      document.getElementById('mp_cases').innerHTML = mp_cases.toLocaleString('en');
-      document.getElementById('mh_cases').innerHTML = mh_cases.toLocaleString('en');
-      document.getElementById('mn_cases').innerHTML = mn_cases.toLocaleString('en');
-      document.getElementById('me_cases').innerHTML = me_cases.toLocaleString('en');
-      document.getElementById('mz_cases').innerHTML = mz_cases.toLocaleString('en');
-      document.getElementById('ng_cases').innerHTML = ng_cases.toLocaleString('en');
-      document.getElementById('od_cases').innerHTML = od_cases.toLocaleString('en');
-      document.getElementById('pd_cases').innerHTML = pd_cases.toLocaleString('en');
-      document.getElementById('pb_cases').innerHTML = pb_cases.toLocaleString('en');
-      document.getElementById('rj_cases').innerHTML = rj_cases.toLocaleString('en');
-      document.getElementById('sk_cases').innerHTML = sk_cases.toLocaleString('en');
-      document.getElementById('tn_cases').innerHTML = tn_cases.toLocaleString('en');
-      document.getElementById('tr_cases').innerHTML = tr_cases.toLocaleString('en');
-      document.getElementById('up_cases').innerHTML = up_cases.toLocaleString('en');
-      document.getElementById('uk_cases').innerHTML = uk_cases.toLocaleString('en');
-      document.getElementById('wb_cases').innerHTML = wb_cases.toLocaleString('en');
-      
-
-
+    
+    
+    
+  
 
     });
+    
   });
