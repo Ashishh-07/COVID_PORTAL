@@ -27,17 +27,17 @@ $(document).ready(function () {
             {
               label: "Positive Cases",
               data: positive,
-              backgroundColor: "#f1c40f",
+              backgroundColor: "#bf88f6",
             },
             {
               label: "Recovered Cases",
               data: recovered,
-              backgroundColor: "#2ecc71",
+              backgroundColor: "#8bd1ee",
             },
             {
                 label: "Deceased Cases",
                 data: deaths,
-                backgroundColor: "#e74c3c",
+                backgroundColor: "#ff6161",
               },
 
           ],
