@@ -1,10 +1,4 @@
-/*! version : 4.17.47
- =========================================================
- bootstrap-datetimejs
- https://github.com/Eonasdan/bootstrap-datetimepicker
- Copyright (c) 2015 Jonathan Peterson
- =========================================================
- */
+
 /*
  The MIT License (MIT)
 
