@@ -1,6 +1,6 @@
 
 (function ($) {
-  // USE STRICT
+
   "use strict";
 
   try {
