@@ -4,7 +4,7 @@
   "use strict";
 
   try {
-    //WidgetChart 1
+ 
     var ctx = document.getElementById("widgetChart1");
     if (ctx) {
       ctx.height = 130;
@@ -70,7 +70,7 @@
     }
 
 
-    //WidgetChart 2
+   
     var ctx = document.getElementById("widgetChart2");
     if (ctx) {
       ctx.height = 130;
